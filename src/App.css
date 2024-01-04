@@ -1,5 +1,10 @@
 .App {
-  text-align: center;
+  width:100vw;
+  height:100vh;
+  background-color: #000000;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .App-logo {
@@ -14,18 +19,125 @@
 }
 
 .App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+  background-color: #15171f;
+  height: max-content;
+  width: 40vw;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
   color: white;
+  padding:16px;
 }
+
 
 .App-link {
   color: #61dafb;
+}
+
+.tab-column{
+  display: flex;
+  width: 100%;
+  flex-direction: column;
+  align-items: center;
+}
+
+.tabs{
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+  align-items: center;
+  /* background-color: yellow; */
+}
+.count{
+  color: #ffffff;
+}
+.tab-heading{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height:50px;
+  color: gray;
+}
+.tab-heading:hover{
+  color: #ffffff;
+  cursor: pointer;
+}
+
+.active{
+  color: #ffffff;
+  border-bottom: 1px solid #ffffff;
+  cursor: pointer;
+}
+
+.search{
+  height:50px;
+  background-color:#1E222F;
+  width:100%;
+  border-radius: 8px;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  position: relative;
+}
+
+.place-holder{
+  padding:0px 8px;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  font-size: 14px;
+  background-color: transparent;
+  border: none;
+  gap:8px;
+  width:100%;
+  cursor:pointer;
+  position: absolute;
+  left: 24px;
+  outline: none;
+  color: #ffffff;
+}
+
+.place-holder::placeholder {
+  color: #ffffff; /* Set the color of the placeholder text */
+}
+
+.place-holder:focus {
+  border-color: transparent; /* Set border color to transparent when focused */
+  outline: none;
+}
+
+.search-icon{
+  position:absolute;
+  padding: 0px 8px;
+}
+
+.place-holder-text{
+  left: 40px;
+  position: absolute;
+  font-size: 16px;
+}
+
+.card{
+  width:100%;
+}
+.breadcrumb{
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+
+.pop-up{
+  border-radius: 100%;
+  border: 1px solid #ffffff;
+  align-items: center;
+  display: flex;
+  justify-content: center;
+  padding:8px;
+  cursor:pointer;
 }
 
 @keyframes App-logo-spin {

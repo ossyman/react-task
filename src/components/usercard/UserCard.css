@@ -1,0 +1,70 @@
+.card-container {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  border-bottom: 0.5px solid #ffffff;
+  width:100%;
+}
+
+.single-card {
+  display: flex;
+  height: 60px;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+}
+
+.avatar_text {
+  display: flex;
+  gap: 16px;
+  align-items: center;
+  height: 100%;
+}
+
+.avatar {
+  width: 30px;
+  height: 30px;
+  object-fit: contain;
+  border-radius: 100px;
+  background-color: white;
+}
+
+.text-column {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 4px;
+}
+
+.user-name {
+  font-size: 18px;
+}
+
+.user-followers {
+  font-size: 14px;
+}
+
+.button {
+  padding: 8px 16px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 0.2px solid #ffffff;
+  font-size: 14px;;
+  border-radius: 8px;
+  cursor:pointer;
+}
+
+.button:hover {
+    padding: 8px 16px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #ffffff;
+    border: 0.2px solid #1E222F;
+    color: #1E222F;
+    font-size: 14px;;
+    border-radius: 8px;
+    cursor:pointer
+  }
+  
